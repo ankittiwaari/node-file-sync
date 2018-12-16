@@ -2,9 +2,9 @@
 This app uses node-ftp and archiver npm packages to first create an archive of specified directory and then upload them to FTP server.
 
 ## Installation
-1- Clone this repo or download the zip
-2- Run npm i
-3- Create a file `env.json` at root use following sample
+1- Clone this repo or download the zip<br/>
+2- Run npm i<br/>
+3- Create a file `env.json` at root use following sample<br/>
 ```json
 {
     "user": "FTP username",
