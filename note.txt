@@ -1,1 +1,0 @@
-node-ftp.txt created for testing
