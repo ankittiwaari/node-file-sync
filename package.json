@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "upload": "node index.js -u",
+    "download": "node index.js -d"
   },
   "author": "Ankit Tiwari",
   "license": "ISC",

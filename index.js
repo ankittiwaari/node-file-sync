@@ -14,9 +14,8 @@ if (argv.upload || argv.u){
     console.log('Invalid or missing argument!');
 }
 
-
 function uploadFilesToServer(){
-    
+
 //create an archived file
 const output = fs.createWriteStream(__dirname + '/files.zip');
 const archive = archiver('zip', {
@@ -67,4 +66,3 @@ c.on('ready', function () {
     });
 });
 }
-
