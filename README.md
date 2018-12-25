@@ -15,4 +15,5 @@ This app uses node-ftp and archiver npm packages to first create an archive of s
 }
 ```
 ## Using the app
-1- Just run node index.js -u to upload the zip archive of the `localDirectory` to `path` on server.
+1- Run `npm run upload` to upload the zip archive of the `localDirectory` to `path` on server.
+2- Run `npm run download` to download the zip archive of files from `path` on server to `localDirectory` locally.

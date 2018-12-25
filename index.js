@@ -14,13 +14,14 @@ const connectionData = {
 };
 const spinner = new Spinner();
 spinner.setSpinnerString(0);
-spinner.start();
 
 if (argv.upload || argv.u){
   console.log('Initiating upload!');
+  spinner.start();
   uploadFilesToServer();
 }else if(argv.download || argv.d){
   console.log('Initiating download!');
+  spinner.setSpinnerString(0);
   downloadFromServer();
 }else{
   console.log('Invalid or missing argument!');
@@ -70,6 +71,7 @@ function uploadFilesToServer(){
       fs.unlink(__dirname + '/files.zip', (err) => {
         if (err){throw err}
         console.log('Local archive deleted!')
+        spinner.stop('clean');
       })
     });
   });
